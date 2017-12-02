@@ -30,12 +30,13 @@ def decode():
 
 	for order in actual_solutions:
 		i = 0
-		s = ""
+		solution = []
 		while (order):
 			i = i % len(order)
 			if (order[i] == 0):
-				s = s + str(name_map[i]) + ", "
-				print s
+				s.append(name_map[i])
+				order.pop(i)
+			if 
 			i = i + 1
 	f.close()
 
