@@ -1,0 +1,4 @@
+8*choose(20,3) = 9120
+main(): starting solve()...
+solve(): [SOLUTION] s = 00000000
+main(): getrusage() ->               0            1760

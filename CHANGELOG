@@ -1,0 +1,10 @@
+==============
+1.0.0 -> 1.0.1
+==============
+1. fixed infinite loop bug in jhjr_divmod()
+2. input circuits must use DIMACS (see: http://maxsat.ia.udl.cat/requirements/) format
+3. bundled problem instances, expr[123], converted to DIMACS: expr[123].cnf
+4. problem instances' clauses and variables within each clause are sorted in main()
+5. clause_count() retooled, highly streamlined to use less memory
+6. choose() now returns long long, instead of int
+7. dump() variable format changed to 4-nibble (e.g., abcd) from 2-nibble (e.g., ab)

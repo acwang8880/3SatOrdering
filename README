@@ -1,0 +1,18 @@
+COMPILING
+---------
+This software must be built with GNU make, version 3.81 or better; see:
+http://ftp.gnu.org/pub/gnu/make/.
+
+
+RUNNING
+-------
+This version of the 3SAT solver features a refactored code base that
+separates the arbitrary precision integer library into a stand-alone unit
+with a stand-alone dynamically linked library (e.g., 'libjhjr_math.so' on
+Linux systems).  Hence, in order for the 3SAT solver to run, this library
+file must be placed in the dynamic link loader's library path (e.g.,
+'/usr/local/lib/' on Linux).  Alternatively, it is possible to specify
+the library's location with the LD_LIBRARY_PATH (DYLD_LIBRARY_PATH on
+MacOS X) environment variable, e.g.:
+
+	$ export LD_LIBRARY_PATH=3sat-0.9.0/jhjr_math:$LD_LIBRARY_PATH
